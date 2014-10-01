@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.4.4.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.4.css"  type="text/css"/>
+
+<link rel="stylesheet" href="themes/blue.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+</head>
+
+ 
+<body> 
+
+<!-- this is home page-->
+
+<div data-role="page" id="homePage">
+	<div data-role="header">
+		<h1><img src="images/UN_Pakistan_Logo_small.png" alt="unsmalllogo" align="center"></h1>
+    </div>
+    
+	
+    <div data-role="main" class="ui-content">	
+	<ul data-role="listview" data-inset="true" data-filter="true">
+  		<li data-role="list-divider">UN Pakistan</li>
+        <li><a href="#">UNCT</a></li>
+        <li><a href="#unrcoStaff">UNRCO Team</a></li>
+        <li data-role="list-divider">Govt. of Pakistan</li>
+        <li><a href="#">EAD</a></li>
+       	<li data-role="list-divider">UNDSS</li>
+        <li><a href="#">DSS Pakistan</a></li>
+        <li data-role="list-divider">Emergency Contact</li>
+        <li><a href="#">Police</a></li>
+	</ul>
+    	
+	</div>
+    
+    <div data-role="footer">
+		<p>Copyrights UN 2014<p>
+    </div>
+	
+</div>
+
+
+<!-- NEXT DYNAMIC PAGE TO SHOW LIST -->
+<div data-role="page" id="unrcoStaff">
+	<div data-role="header">
+		<h1><img src="images/UN_Pakistan_Logo_small.png" alt="unsmalllogo" align="center"></h1>
+    </div>
+      <div data-role="main" class="ui-content">
+    
+      	  <ul data-role="listview" data-autodividers="true" data-inset="true" data-filter="true">
+          <li>
+                <a href="#naveedPopup" data-rel="popup"">
+                <img src="images/Generic_Placeholder_-_Profile.jpg" alt="imgplaceholder">
+				<h2>Naveed Ahmed</h2>
+                <p>Management Information Analyst.</p>
+                </a>
+                <div data-role="popup" id="naveedPopup" >
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">close</a>
+                <a href="tel: +923219089655" class="ui-btn ui-icon-phone ui-btn-icon-left ui-mini">+923219089655</a>
+                 <a href="sms: +923219089655" class="ui-btn ui-icon-comment ui-btn-icon-left ui-mini">+923219089655</a>
+                  <a href="mailto: naveed.ahmed@one.un.org" class="ui-btn ui-icon-mail ui-btn-icon-left ui-mini">naveed.ahmed@one.un.org</a>
+       			
+    			</div>
+            </li>
+            
+            <li>
+                <a href="#">
+                <img src="images/Generic_Placeholder_-_Profile.jpg" alt="imgplaceholder">
+				<h2>Sara Ali Noori</h2>
+                <p>Operation Management Officer.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="images/Generic_Placeholder_-_Profile.jpg" alt="imgplaceholder">
+				<h2>Zarar Khan</h2>
+                <p>Program Analyst.</p>
+                </a>
+            </li>     	
+          </ul>
+        </div>
+           
+        <div data-role="footer">
+			<p>Copyrights UN 2014<p>
+    	</div>
+      
+</div>
+
+
+
+
+</body>
+</html>
