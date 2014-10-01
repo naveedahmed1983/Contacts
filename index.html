@@ -27,12 +27,14 @@
     <div data-role="main" class="ui-content">	
 	<ul data-role="listview" data-inset="true" data-filter="true">
   		<li data-role="list-divider">UN Pakistan</li>
-        <li><a href="#">UNCT</a></li>
+        <li><a href="#">Head Of Agencies</a></li>
+        <li><a href="#">Deputy Head Of Agencies</a></li>
         <li><a href="#unrcoStaff">UNRCO Team</a></li>
+        <li><a href="#">DSS Pakistan</a></li>
+        <!--
         <li data-role="list-divider">Govt. of Pakistan</li>
         <li><a href="#">EAD</a></li>
-       	<li data-role="list-divider">UNDSS</li>
-        <li><a href="#">DSS Pakistan</a></li>
+        -->
         <li data-role="list-divider">Emergency Contact</li>
         <li><a href="#">Police</a></li>
 	</ul>
@@ -40,7 +42,7 @@
 	</div>
     
     <div data-role="footer">
-		<p>Copyrights UN 2014<p>
+		<p align="center">Copyrights UN 2014<p>
     </div>
 	
 </div>
@@ -49,11 +51,11 @@
 <!-- NEXT DYNAMIC PAGE TO SHOW LIST -->
 <div data-role="page" id="unrcoStaff">
 	<div data-role="header">
-		<h1><img src="images/UN_Pakistan_Logo_small.png" alt="unsmalllogo" align="center"></h1>
+		<h1><a href="#homePage"><img src="images/UN_Pakistan_Logo_small.png" alt="unsmalllogo" align="center"></a></h1>
     </div>
       <div data-role="main" class="ui-content">
     
-      	  <ul data-role="listview" data-autodividers="true" data-inset="true" data-filter="true">
+      	  <ul data-role="listview" data-autodividers="true" data-inset="true" data-filter="true" data-icon="info">
           <li>
                 <a href="#naveedPopup" data-rel="popup"">
                 <img src="images/Generic_Placeholder_-_Profile.jpg" alt="imgplaceholder">
@@ -70,24 +72,37 @@
             </li>
             
             <li>
-                <a href="#">
+                <a href="#saraPopup" data-rel="popup"">
                 <img src="images/Generic_Placeholder_-_Profile.jpg" alt="imgplaceholder">
 				<h2>Sara Ali Noori</h2>
                 <p>Operation Management Officer.</p>
                 </a>
+                <div data-role="popup" id="saraPopup" >
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">close</a>
+                <a href="tel: +92515835701" class="ui-btn ui-icon-phone ui-btn-icon-left ui-mini">+923219089655</a>
+                 <a href="mailto: sara.noori@one.un.org" class="ui-btn ui-icon-mail ui-btn-icon-left ui-mini">sara.noori@one.un.org</a>
+       			
+    			</div>
             </li>
             <li>
-                <a href="#">
+                <a href="#zararPopup" data-rel="popup"">
                 <img src="images/Generic_Placeholder_-_Profile.jpg" alt="imgplaceholder">
 				<h2>Zarar Khan</h2>
                 <p>Program Analyst.</p>
                 </a>
+                <div data-role="popup" id="zararPopup" >
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">close</a>
+                <a href="tel: +923005316608" class="ui-btn ui-icon-phone ui-btn-icon-left ui-mini">+923005316608</a>
+                 <a href="sms: +923005316608" class="ui-btn ui-icon-comment ui-btn-icon-left ui-mini">+923005316608</a>
+                  <a href="mailto: zarar.khan@one.un.org" class="ui-btn ui-icon-mail ui-btn-icon-left ui-mini">zarar.khan@one.un.org</a>
+       			
+    			</div>
             </li>     	
           </ul>
         </div>
            
         <div data-role="footer">
-			<p>Copyrights UN 2014<p>
+			<p align="center">Copyrights UN 2014<p>
     	</div>
       
 </div>
