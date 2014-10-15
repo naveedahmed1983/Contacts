@@ -17,7 +17,7 @@
  <script type="text/javascript">
     $(document).bind('mobileinit', function(){
       //$.mobile.page.prototype.options.addBackBtn = true;
-     // $.mobile.defaultPageTransition = "slide";
+     $.mobile.defaultPageTransition = "slide";
       $.mobile.linkBindingEnabled = false;
       $.mobile.hashListeningEnabled = false;
     });
@@ -171,7 +171,7 @@ $("#pinCode").click(function(){
 
 <script type="text/x-mustache-template" id="MemberDetailView-template">
 {{#memberItemDetails}}
-<div data-role="page" id="MemberDetailPage" data-close-btn="none">
+<div data-role="page" id="MemberDetailPage" data-dialog="true" data-close-btn="none">
 
 	<div data-role="header">
 		<h1>
