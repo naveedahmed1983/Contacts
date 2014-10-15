@@ -17,7 +17,7 @@
  <script type="text/javascript">
     $(document).bind('mobileinit', function(){
       //$.mobile.page.prototype.options.addBackBtn = true;
-      $.mobile.defaultPageTransition = "slide";
+     // $.mobile.defaultPageTransition = "slide";
       $.mobile.linkBindingEnabled = false;
       $.mobile.hashListeningEnabled = false;
     });
@@ -42,7 +42,8 @@ $(document).ready(function(){
 		
 		var password = "un2014";
     		if($("#pinCode").val() !== password) {
-        		$("#err").text("Incorrect aceess code.");
+				$("#pinCode").val("");
+        		$("#err").text("Access Denied! Please type the correct access code or contact Administrator for further assistance");
     		}
     		else {
 				
@@ -54,7 +55,11 @@ $(document).ready(function(){
 	});
 	
 	
+$("#pinCode").click(function(){
+	$("#err").text("");
 	
+	});
+		
 	
 });
 </script>
@@ -80,13 +85,15 @@ $(document).ready(function(){
     
 	
     <div data-role="main" class="ui-content">	
-	   	<p> To access the application, please confirm that you have the access code. Enter the access code. </p>
+	   	<p> Please type the desired Access Code or contact the Administrator for access </p>
         <div class="ui-field-contain">
         	<input class="pinCode" type="password" name="pinCode" id="pinCode">
          </div> 
          <div id="err"></div>
          <a href="#" class="ui-btn" id="btnCheck"> Let me in</a>
           <a href="#TeamPage" class="ui-btn" id="btnlogin"> Login</a>
+          <div data-role="content">This application presents a fast way to lookup contacts of UN staff members of Pakistan. This application has been exclusively made for the UN Pakistan and it needs to be only used by a UN employee. If the information provided is incorrect, please contact the app administrator at the below given email for modifying and updating the incorrect information. <a href:"mailto: naveed.ahmed@one.un.org"> naveed.ahmed@one.un.org </a> 
+</div>
 		</div>
     
         <div data-role="footer" data-position="fixed" >
@@ -141,7 +148,7 @@ $(document).ready(function(){
     </div>
 
 	<div data-role="content" id="TeamMemberPageContents">
-		<ul data-role="listview" data-inset="true" data-filter="true" id="{{teamMembersContainerId}}">
+		<ul data-role="listview" data-inset="true" data-filter="true" id="{{teamMembersContainerId}}" data-icon="info">
 		{{#teamMembersItemDetails}}
 		  <li>
 		  	 
@@ -164,7 +171,7 @@ $(document).ready(function(){
 
 <script type="text/x-mustache-template" id="MemberDetailView-template">
 {{#memberItemDetails}}
-<div data-role="page" id="MemberDetailPage" data-dialog="true" data-rel"{{backURL}}" data-close-btn="none">
+<div data-role="page" id="MemberDetailPage" data-close-btn="none">
 
 	<div data-role="header">
 		<h1>
@@ -184,6 +191,7 @@ $(document).ready(function(){
 		<h2>{{name}}</h2>
  		<p>{{title}}, {{agency}}.</p>
 		{{#office}}
+		
 			<a href="tel: {{office}}" class="ui-btn ui-icon-phone ui-btn-icon-left ui-mini">{{office}}</a>	
 		{{/office}}
 		{{#cell}}
@@ -196,7 +204,7 @@ $(document).ready(function(){
 		
 	</div>
 	
-	<div data-role="footer" align="center">
+	<div data-role="footer" align="center" data-position="fixed">
 		<p>Copyrights UN 2014</p>
     </div>
 {{/memberItemDetails}}  
@@ -225,8 +233,6 @@ $(document).ready(function(){
 <script src="js/app/view/MemberDetailView.js"></script>
 
 
-<!--
-<script type="text/javascript"> $(function(){ UNDirectoryApp.boot($('#TeamPageContents')); });</script>
--->
+
 </body>
 </html>
