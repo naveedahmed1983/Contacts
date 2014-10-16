@@ -3,6 +3,7 @@ UNDirectoryApp.TeamMembersListView = Backbone.View.extend({
 	teamListMembersViewTemplate: UNDirectoryApp.template("TeamMemberListView"),	
 	
 	initialize: function(options){
+		this.teamName = options.teamName;
 		this.teamId = options.teamId;
 		this.teamMembers = options.teamMembers;
 	  	this.containerId = options.containerId;
@@ -38,6 +39,10 @@ UNDirectoryApp.TeamMembersListView = Backbone.View.extend({
 	getTeamMemberDetailUrl: function(id){
 		//console.log("#teamMemberDetail/"+this.teamId+"/"+id);
       return "#teamMemberDetail/"+this.teamId+"/"+id;
+	},
+	
+	teamName : function(){
+		return this.teamName;
 	}
 
 });

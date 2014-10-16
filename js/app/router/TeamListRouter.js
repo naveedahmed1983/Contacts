@@ -30,7 +30,8 @@
 		// fetch array based on teamId from this.teams and store it
 		// in members object and then pass this object to thse rows.
 		var members = this.teams[id].teamMembers;
-		var teamMembersListView = new UNDirectoryApp.TeamMembersListView({teamId: id, teamMembers: members});
+		var tName = this.teams[id].teamName;
+		var teamMembersListView = new UNDirectoryApp.TeamMembersListView({teamId: id, teamName: tName, teamMembers: members});
 		var teamMembersListPage = teamMembersListView.render();
 		
 		 //this.el.empty();
