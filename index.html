@@ -4,64 +4,17 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/css">
-.ui-bar {
-    padding :5px 0px 5px 0px !important;
-    margin :5px 0px 5px 0px !important;
-}
-</script>
-
 <script src="js/lib/jquery-1.11.1.min.js" type="text/javascript"></script>
-
-
- <script type="text/javascript">
+<script type="text/javascript">
     $(document).bind('mobileinit', function(){
       //$.mobile.page.prototype.options.addBackBtn = true;
      $.mobile.defaultPageTransition = "slide";
       $.mobile.linkBindingEnabled = false;
       $.mobile.hashListeningEnabled = false;
     });
-	
-  </script>
-
-
-
+</script>
 <script src="js/lib/jquery.mobile-1.4.4.min.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-
-$(document).ready(function(){
-	
-	
-	
-	$("#btnlogin").hide();
-	
-	$("#btnCheck").click(function(){
-		//console.log("it worked");
-		//console.log($("#pinCode").val());
-		
-		var password = "un2014";
-    		if($("#pinCode").val() !== password) {
-				$("#pinCode").val("");
-        		$("#err").text("Access Denied! Please type the correct access code or contact Administrator for further assistance");
-    		}
-    		else {
-				
-				//$("#btnlogin").click();
-				console.log('correct code');
-				UNDirectoryApp.boot($('#TeamPageContents'));
-				  
-    		}
-	});
-	
-	
-$("#pinCode").click(function(){
-	$("#err").text("");
-	
-	});
-		
-	
-});
+<script src ="js/app/main.js" type="text/javascript">
 </script>
 
 
