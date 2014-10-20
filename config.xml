@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.pkorgun.unpakistancontacts"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>UN Pakistan Contacts</name>
+
+    <description>
+       This application presents a fast way to lookup contacts of UN staff members of Pakistan. This application has been exclusively made for the UN Pakistan and it needs to be only used a UN employee. If the information provided is incorrect, please contact the app administrator at the below given email for modifying and updating the incorrect information.
+    </description>
+
+    <author href="https://www.un.org.pk" email="naveed.ahmed@one.un.org">
+        Naveed Ahmed
+    </author>
+	
+	<icon src="images\resources\Appicon.png" />
+	
+	<gap:splash src="images\resources\Splash.png" />
+
+</widget>
