@@ -18,8 +18,8 @@
         Naveed Ahmed
     </author>
 	
-	<icon src="images\resources\Appicon.png" />
+	<icon src="Appicon.png" />
 	
-	<gap:splash src="images\resources\Splash.png" />
+	<gap:splash src="Splash.png" />
 
 </widget>
