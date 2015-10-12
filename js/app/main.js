@@ -1,1 +1,44 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(f).k(1(){$("#q").c();$(\'#0\').g(1(e){$("#2").3("");5 a=e.s;6(a==d){$("#7").4();h i}});$("#7").4(1(){5 a="j";6($("#0").8()!==a){$("#0").8("");$("#2").3("l m! n o p 9 r b t u v w x y")}z{A.B(\'9 b\');C.D($(\'#E\'))}});$("#0").4(1(){$("#2").3("")})});',41,41,'pinCode|function|err|text|click|var|if|btnCheck|val|correct||code|hide|13||document|keypress|return|false|un2014|ready|Access|Denied|Please|type|the|btnlogin|access|which|or|contact|Administrator|for|further|assistance|else|console|log|UNDirectoryApp|boot|TeamPageContents'.split('|'),0,{}))
+$(document).ready(function(){
+	
+	/*
+	
+	$("#btnlogin").hide();
+	
+	$('#pinCode').keypress(function (e) {
+		$("#err").text("");
+ 		var key = e.which;
+ 		if(key == 13)  // the enter key code
+  		{
+    		$("#btnCheck").click();
+    		return false;  
+  		}
+	});
+	
+	$("#btnCheck").click(function(){
+		//console.log("it worked");
+		//console.log($("#pinCode").val());
+		
+		var password = "un2014";
+    		if($("#pinCode").val() !== password) {
+				$("#pinCode").val("");
+        		$("#err").text("Access Denied! Please type the correct access code or contact Administrator for further assistance");
+    		}
+    		else {
+				
+				//$("#btnlogin").click();
+				console.log('correct code');
+				UNDirectoryApp.boot($('#TeamPageContents'));
+				  
+    		}
+	});
+	
+	
+	
+	
+$("#pinCode").click(function(){
+	$("#err").text("");
+	});
+		
+	*/
+	UNDirectoryApp.boot($('#TeamPageContents'));
+});
